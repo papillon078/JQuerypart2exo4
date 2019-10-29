@@ -15,14 +15,20 @@
 
   <script type="text/javascript" src='assets/lib/jquery-3.4.1.min.js'></script>
   <script>
-  $('#green').click(function(){
+  $(function(){
+    /*$('#green').click(function(){
       $('#text').css('color', 'green');
-  });
-  $('#red').click(function(){
+    });
+    $('#red').click(function(){
       $('#text').css('color', 'red');
-  });
-  $('#blue').click(function(){
+    });
+    $('#blue').click(function(){
       $('#text').css('color', 'blue');
+    });*/
+    // 2e méthode, en 1 seule fonction
+    $('.color').click(function(){
+      $('#text').css('color', this.id);
+    });
   });
   </script>
 </body>
